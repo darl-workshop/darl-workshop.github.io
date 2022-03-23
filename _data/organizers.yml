@@ -1,20 +1,24 @@
-- name: Rishabh Agarwal
-  image: images/organizers/rishabh.jpg
-  title: Google Research, Brain Team and Mila & Research Associate
-  url: https://agarwl.github.io/
-- name: Aviral Kumar
-  image: images/organizers/aviral.jpg
-  title: UC Berkeley & PhD Student
-  url: https://aviralkumar2907.github.io
-- name: George Tucker
-  image: images/organizers/george.JPG
-  url: https://sites.google.com/view/gjt
-  title: Google Research, Brain Team & Senior Research Scientist
+- name: Evgenii Nikishin
+  image: images/organizers/evgenii.jpg
+  title: Mila, University of Montreal
+  url: https://evgenii-nikishin.github.io/
+- name: Pierluca D'Oro
+  image: images/organizers/pierluca.jpeg
+  title: Mila, University of Montreal
+  url: https://proceduralia.github.io/
 - name: Doina Precup
   image: images/organizers/doina.jpg
   url: https://www.cs.mcgill.ca/~dprecup
-  title: DeepMind and McGill University & Professor
-- name: Lihong Li
-  image: images/organizers/lihong.png
-  url: https://lihongli.github.io
-  title: Amazon & Senior Principal Scientist
+  title: DeepMind and McGill University
+- name: Andre Barreto
+  image: images/organizers/andre.jpeg
+  title: DeepMind
+  url: https://sites.google.com/view/andrebarreto
+- name: Amir-massoud Farahmand
+  image: images/organizers/amf.jpeg
+  title: Vector Institute, University of Toronto
+  url: http://academic.sologen.net/
+- name: Pierre-Luc Bacon
+  image: images/organizers/plb.jpeg
+  title: Mila, University of Montreal
+  url: https://pierrelucbacon.com/

@@ -2,20 +2,24 @@
 layout: default
 ---
 
-<figure>
+<!-- <figure>
     <center><img src="https://offline-rl.github.io/assets/OFFLINE_RL.gif" style="width:65%"; /></center>
     <figcaption style='text-align: center'><small>Source: <a href="https://ai.googleblog.com/2020/04/an-optimistic-perspective-on-offline.html">Google AI Blog </a></small></figcaption>
-</figure>
+</figure> -->
 
 <div class="row">
 
-<p style="color:red;"> The website for <b>2<sup>nd</sup></b> offline RL workshop at NeurIPS 2021 can be found at <a href=https://offline-rl-neurips.github.io/2021> offline-rl-neurips.github.io/2021</a>.<p>
+<!-- <p style="color:red;"> The website for <b>2<sup>nd</sup></b> offline RL workshop at NeurIPS 2021 can be found at <a href=https://offline-rl-neurips.github.io/2021> offline-rl-neurips.github.io/2021</a>.<p> -->
 
-<p>The remarkable success of deep learning has been driven by the availability of large and diverse datasets such as ImageNet. In contrast, the common paradigm in reinforcement learning (RL) assumes that an agent frequently interacts with the environment and learns using its own collected experience. This mode of operation is prohibitive for many complex real-world problems, where repeatedly collecting diverse data is expensive (<span><em>e.g.,</em></span> robotics or educational agents) and/or potentially unsafe (<span><em>e.g.,</em></span> healthcare).</p>
-<p>Alternatively, <em>Offline RL</em> focuses on training agents with logged data with no further environment interaction. Offline RL promises to bring forward a data-driven RL paradigm and carries the potential to scale up end-to-end learning approaches to real-world decision making tasks such as robotics, recommendation systems, dialogue generation, autonomous driving, healthcare systems and safety-critical applications. Recently, successful deep RL algorithms have been adapted to the offline RL setting and demonstrated a potential for success in a number of domains, however, significant algorithmic and practical challenges remain to be addressed. Within the past two years, performance on simple benchmarks has rapidly risen, so the community has also started developing standardized benchmarks (<a href="https://deepmind.com/research/open-source/RL-Unplugged-An-Offline-RL-Benchmark-Suite">RLUnplugged</a>, <a href="https://sites.google.com/view/d4rl/home">D4RL</a>) specifically designed to stress-test offline RL algorithms. 
+<p>The goal of reinforcement learning (RL) is to maximize a reward signal by taking optimal decisions. An RL agent typically contains several modules such as a policy, a value function, and, in model-based RL, a model of the environment's dynamics. Conventionally, each of these modules is trained to perform well with a criteria that does not explicitly consider their role, in interaction with other modules, in the eventual decision making of the agent. For instance, a model in a model-based RL agent is trained to be an accurate predictor of the environment, ignoring the fact that an accurate predictor may not be feasible or even necessary. For example, one may not need to model the irrelevant details of an image in a pixel-based environment; but trying to learn an accurate model of the dynamics requires a much larger number of samples and higher-capacity function approximators compared to a <span><em>decision-aware</em></span> model that only focuses on modelling the relevant aspects of the environment. Decision-awareness refers to the principle that each module should be trained to <span><em>explicitly</em></span> consider how its interaction with other modules leads to improving the agent’s long-term performance, as specified by the reward signal.</p>
+<p>Decision-awareness goes beyond model learning. In actor-critic algorithms, a critic is trained to predict the expected return while later used to aid policy optimization. Is the accuracy of return prediction an optimal strategy for critic learning? Or can we train a critic that considers its interaction with the actor and directly maximizes the performance of the policy that uses the critic? More generally, what is the best way to learn each components of an RL agent, considering their mutual interactions and the eventual goal of maximizing the performance? Our workshop aims at answering these questions and articulating that decision-awareness might be a key towards solving grand challenges in RL including exploration and sample efficiency.</p>
+<p>Recently, there has been a rising interest in the RL community in studying and leveraging the interplay among the moving parts of RL systems. It has been done by designing new loss functions, end-to-end procedures, and meta-learning frameworks. The decision-awareness leads not only to a deeper theoretical understanding of the limitations of traditional RL approaches, but also to high-performing algorithms with promising applicability to real-world problems. We believe that now would be the ideal time for a workshop to discuss and unify the ideas in the community, as well as to plan the possible future steps for this family of methods.</p>
+
+<!-- <p>The remarkable success of deep learning has been driven by the availability of large and diverse datasets such as ImageNet. In contrast, the common paradigm in reinforcement learning (RL) assumes that an agent frequently interacts with the environment and learns using its own collected experience. This mode of operation is prohibitive for many complex real-world problems, where repeatedly collecting diverse data is expensive (<span><em>e.g.,</em></span> robotics or educational agents) and/or potentially unsafe (<span><em>e.g.,</em></span> healthcare).</p> -->
+<!-- <p>Alternatively, <em>Offline RL</em> focuses on training agents with logged data with no further environment interaction. Offline RL promises to bring forward a data-driven RL paradigm and carries the potential to scale up end-to-end learning approaches to real-world decision making tasks such as robotics, recommendation systems, dialogue generation, autonomous driving, healthcare systems and safety-critical applications. Recently, successful deep RL algorithms have been adapted to the offline RL setting and demonstrated a potential for success in a number of domains, however, significant algorithmic and practical challenges remain to be addressed. Within the past two years, performance on simple benchmarks has rapidly risen, so the community has also started developing standardized benchmarks (<a href="https://deepmind.com/research/open-source/RL-Unplugged-An-Offline-RL-Benchmark-Suite">RLUnplugged</a>, <a href="https://sites.google.com/view/d4rl/home">D4RL</a>) specifically designed to stress-test offline RL algorithms.  -->
 <!-- However, these are only initial proposals that could benefit from community input on design and evaluation protocol.</p> -->
 
-<p><strong>Goal of the workshop</strong>: Our goal is to bring attention to offline RL, both from within and from outside the RL community (e.g., causal inference, optimization, self-supervised learning), discuss algorithmic challenges that need to be addressed, discuss potential real-world applications, discuss limitations and challenges, and come up with concrete problem statements and evaluation protocols, inspired from real-world applications, for the research community to work on. In particular, we are interested in bringing together researchers and practitioners to discuss questions on theoretical, empirical, and practical aspects of offline RL, including but not limited to,</p>
+<!-- <p><strong>Goal of the workshop</strong>: Our goal is to bring attention to offline RL, both from within and from outside the RL community (e.g., causal inference, optimization, self-supervised learning), discuss algorithmic challenges that need to be addressed, discuss potential real-world applications, discuss limitations and challenges, and come up with concrete problem statements and evaluation protocols, inspired from real-world applications, for the research community to work on. In particular, we are interested in bringing together researchers and practitioners to discuss questions on theoretical, empirical, and practical aspects of offline RL, including but not limited to,</p>
 <ul>
 <li>Algorithmic decisions and associated challenges in training RL agents offline</li>
 <li>Properties of supervision needed to guarantee the success of offline RL methods</li>
@@ -26,9 +30,20 @@ layout: default
 <li>Connections to transfer learning, self-supervised learning and generative modelling</li>
 </ul>
 </p>
+</div> -->
+
+<p><strong>Goal of the workshop</strong>: Our goal is to give an outlet for a discussion about training decision-aware RL algorithms and mitigating objective mismatches of traditional approaches. We are interested in the implications and real-world applications of these techniques, as well as in widening the understanding of the conceptual and practical limitations of existing approaches. We look for theoretical, algorithmic, and empirical contributions, including, but not limited to,</p>
+<ul>
+<li>Decision-aware objectives, end-to-end procedures, and meta-learning techniques for training and discovering components in modular RL systems</li>
+<li>Theoretical and empirical analyses of the interaction among multiple modules used by RL algorithms</li>
+<li>Studies of the performance of model-based RL agents under model misspecification</li>
+<li>The role of unsupervised learning and auxiliary training signals in RL and their relation to decision-awareness</li>
+<li>Connections with other fields such as control theory, cognitive science, and robotics</li>
+</ul>
+</p>
 </div>
 
-<div id="PC" class="row">
+<!-- <div id="PC" class="row">
 <h3>Program Committee</h3>
 <div class="break"></div>
 	<ul style="width:25%; float:left; display: inline; ">
@@ -82,7 +97,7 @@ layout: default
 		<li>Yi Su</li>
 		<li>Ziyu Wang </li>
 	</ul>
-</div>
+</div> -->
 
 <div id="organizers" class="row">
 <h2 style="float:left;">Organizers</h2>
@@ -97,8 +112,8 @@ layout: default
 {%- endfor -%}
 </div>
 </div>
-<p> To contact the organizers, please send an email to <a href="mailto:offline-rl-neurips@google.com">offline-rl-neurips@google.com</a>. <p>
+<p> To contact the organizers, please send an email to <a href="mailto:darl.workshop@gmail.com">darl.workshop@gmail.com</a>. <p>
 
 
 <p style="text-align:right">
-  <small> Thanks to Jessica Hamrick for allowing us to borrow this <a href="https://baicsworkshop.github.io/index.html">template</a>. </small> </p>
+  <small> Thanks to Rishabh Agarwal for providing this <a href="https://offline-rl-neurips.github.io/">template</a>. </small> </p>
