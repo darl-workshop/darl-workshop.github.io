@@ -192,3 +192,13 @@ table .time {
     margin: 0 -1em;
   }
 }
+
+.inline {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .img_disappear {display:none;}
+
+}
