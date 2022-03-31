@@ -4,202 +4,97 @@ layout: default
 
 <div class="row">
 <p>
-This page contains a non-exhaustive list of resources for machine learning and reinforcement learning researchers and practitioners to learn more about offline RL. We welcome additional resource suggestions via <a href="mailto:offline-rl-neurips@google.com">offline-rl-neurips@google.com</a> or <a href="https://github.com/offline-rl-neurips/offline-rl-neurips.github.io/edit/master/resources.html">a PR on GitHub</a>.
+This page contains a non-exhaustive list of papers related to decision awareness in RL. We welcome additional resource suggestions via <a href="https://github.com/darl-workshop/darl-workshop.github.io/edit/master/resources.html">a pull request on GitHub</a>.
 </p>
 </div>
 
-<!-- <div id="tutorials" class="row">
-  <h2> Survery, Tutorial and Blog Posts </h2>
-  <p> <span class="smallcaps"> Levine S., Kumar A., Tucker G., Fu J.</span> 2020. Offline RL Tutorial, Review and Perspectives on Open Problems.
-  <p><span class="smallcaps">Agarwal, R.</span> 2020. An optimistic perspective on offline reinforcement learning..</p>
-</div> -->
 
 <div id="references" class="row"> 
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <h2>References (Alphabetical Order)</h2>
-<!-- <div id="ref-rishabh_blog">
-<p><span class="smallcaps">Agarwal, R.</span> 2020. An optimistic perspective on offline reinforcement learning..</p>
-</div> -->
-<div id="ref-agarwal2019striving">
-<p><span class="smallcaps">Agarwal, R., Schuurmans, D., and Norouzi, M.</span> 2020. An Optimistic Perspective on Offline Reinforcement Learning. <em>International Conference on Machine Learning (ICML)</em>.</p>
-</div>
-<div id="ref-bodnar2019quantile">
-<p><span class="smallcaps">Bodnar, C., Li, A., Hausman, K., Pastor, P., and Kalakrishnan, M.</span> 2019. Quantile qt-opt for risk-aware vision-based robotic grasping. <em>arXiv preprint arXiv:1910.02787</em>.</p>
-</div>
-<div id="ref-bottou2013counterfactual">
-<p><span class="smallcaps">Bottou, L., Peters, J., Quiñonero-Candela, J., et al.</span> 2013. Counterfactual reasoning and learning systems: The example of computational advertising. <em>JMLR</em>.</p>
-</div>
-<div id="ref-boyan199lstdq">
-<p><span class="smallcaps">Boyan, J. A.</span> 1999. Least-squares temporal difference learning <em>ICML</em>.</p>
-</div>
-<div id="ref-cabi2019framework">
-<p><span class="smallcaps">Cabi, S., Colmenarejo, S.G., Novikov, A., et al.</span> 2019. A framework for data-driven robotics. <em>arXiv preprint arXiv:1909.12200</em>.</p>
-</div>
-<div id="ref-chang2020semantic">
-<p><span class="smallcaps">Chang, M., Gupta, A., & Gupta, S.</span> 2020. Semantic visual navigation by watching youtube videos. <em>NeurIPS</em>.</p>
-</div>
-<div id="ref-chen2019information">
-<p><span class="smallcaps">Chen, J. and Jiang, N.</span> 2019. Information-theoretic considerations in batch reinforcement learning. <em>ICML</em>.</p>
-</div>
-<div id="ref-chen2019bail">
-<p><span class="smallcaps">Chen, X., Zhou, Z., Wang, Z., et al.</span> 2019. BAIL: Best-action imitation learning for batch deep reinforcement learning. <em>arXiv preprint arXiv:1910.12179</em>.</p>
-</div>
-<div id="ref-dai2017boosting">
-<p><span class="smallcaps">Dai, B., Shaw, A., He, N., Li, L., and Song, L.</span> 2017. Boosting the actor with dual critic. <em>arXiv preprint arXiv:1712.10282</em>.</p>
-</div>
-<div id="ref-dai2018sbeed">
-<p><span class="smallcaps">Dai, B., Shaw, A., Li, L., et al.</span> 2018. SBEED: Convergent reinforcement learning with nonlinear function approximation. <em>International conference on machine learning</em>, 1125–1134.</p>
-</div>
-<div id="ref-degris2012offpac">
-  <p><span class="smallcaps">Degris, T., White, M., Sutton, R. S.</span> 2012. Off-policy Actor-Critic. arXiv preprint arXiv:1205.4839. </p>
-</div>
-<p><span class="smallcaps">Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L.</span> 2009. ImageNet: A Large-Scale Hierarchical Image Database. <em>CVPR</em>.</p>
-</div>
-<div id="ref-imagenet_cvpr09">
-<p><span class="smallcaps">Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L.</span> 2009. ImageNet: A Large-Scale Hierarchical Image Database. <em>CVPR</em>.</p>
-</div>
-<div id="ref-dudik2014doubly">
-<p><span class="smallcaps">Dudı́k, M., Erhan, D., Langford, J., Li, L., and others</span>. 2014. Doubly robust policy evaluation and optimization. <em>Statistical Science</em> <em>29</em>, 4, 485–511.</p>
-</div>
-<div id="ref-dulac2019challenges">
-<p><span class="smallcaps">Dulac-Arnold, G., Mankowitz, D., and Hester, T.</span> 2019. Challenges of real-world reinforcement learning. <em>arXiv preprint arXiv:1904.12901</em>.</p>
-</div>
-<div id="ref-ernst2005tree">
-<p><span class="smallcaps">Ernst, D., Geurts, P., and Wehenkel, L.</span> 2005. Tree-based batch mode reinforcement learning. <em>JMLR</em>.</p>
-</div>
-<div id="ref-d4rl">
-<p><span class="smallcaps">Fu, J., Kumar, A., Nachum, O., Tucker, G., and Levine, S.</span> 2020. D4RL: Datasets for deep data-driven reinforcement learning. <em>ArXiv</em>.</p>
-</div>
-<div id="ref-farahmand2010error">
-<p><span class="smallcaps">Farahmand, A. M., Szepesvári, C., Munos R.</span> 2010. Error propagation for approximate policy and value iteration  <em>NeurIPS</em>.</p>
-</div>
-<div id="ref-farahmand2011model">
-<p><span class="smallcaps">Farahmand, A. M., Szepesvári, C.</span> 2011. Model selection in reinforcement learning. <em>Machine learning,</em> 85(3) 299-332.</p>
-</div>
-<div id="ref-fujimoto2019benchmarking">
-<p><span class="smallcaps">Fujimoto, S., Conti, E., Ghavamzadeh, M., and Pineau, J.</span> 2019. Benchmarking batch deep reinforcement learning algorithms. <em>arXiv preprint arXiv:1910.01708</em>.</p>
-</div>
-<div id="ref-fujimoto2018off">
-<p><span class="smallcaps">Fujimoto, S., Meger, D., and Precup, D.</span> 2018. Off-policy deep reinforcement learning without exploration. <em>arXiv preprint arXiv:1812.02900</em>.</p>
-</div>
-<div id="ref-gottesman2020interpretable">
-<p><span class="smallcaps">Gottesman, O., Futoma, J., Liu, Y., et al.</span> 2020. Interpretable off-policy evaluation in reinforcement learning by highlighting influential transitions. <em>arXiv preprint arXiv:2002.03478</em>.</p>
-</div>
-<div id="ref-gulcehre2020rl">
-<p><span class="smallcaps">Gulcehre, C., Wang, Z., Novikov, A., et al.</span> 2020. RL unplugged: Benchmarks for offline reinforcement learning. <em>arXiv preprint arXiv:2006.13888</em>.</p>
-</div>
-<div id="ref-hoppe2019qgraph">
-<p><span class="smallcaps">Hoppe, S. and Toussaint, M.</span> 2019. Qgraph-bounded q-learning: Stabilizing model-free off-policy deep reinforcement learning..</p>
-</div>
-<div id="ref-jaques2019way">
-<p><span class="smallcaps">Jaques, N., Ghandeharioun, A., Shen, J.H., et al.</span> 2019. Way off-policy batch deep reinforcement learning of implicit human preferences in dialog. <em>arXiv preprint arXiv:1907.00456</em>.</p>
-</div>
-<div id="ref-jiang2016doubly">
-<p><span class="smallcaps">Jiang, N. and Li, L.</span> 2016. Doubly robust off-policy value evaluation for reinforcement learning. <em>International conference on machine learning</em>, 652–661.</p>
-</div>
-<div id="ref-karampatziakis2019empirical">
-<p><span class="smallcaps">Karampatziakis, N., Langford, J., and Mineiro, P.</span> 2019. Empirical likelihood for contextual bandits. <em>arXiv preprint arXiv:1906.03323</em>.</p>
-</div>
-<div id="ref-kidambi2020morel">
-<p><span class="smallcaps">Kidambi, R., Rajeswaran, A., Netrapalli, P., and Joachims, T.</span> 2020. MOReL: Model-based offline reinforcement learning. <em>arXiv preprint arXiv:2005.05951</em>.</p>
-</div>
-<!-- <div id="ref-kumar_blog">
-<p><span class="smallcaps">Kumar, A.</span> 2019. Data-driven deep reinforcement learning..</p>
-</div> -->
-<div id="ref-kumar2019stabilizing">
-<p><span class="smallcaps">Kumar, A., Fu, J., Tucker, G., and Levine, S.</span> 2019. Stabilizing Off-Policy Q-Learning via Bootstrapping Error Reduction. <em>NeurIPS</em>.</p>
-</div>
-<div id="ref-kumar2020learning">
-<p><span class="smallcaps">Kumar, A., Gupta, S. and Malik, J.</span> 2020. Learning Navigation Subroutines from Egocentric Videos. <em>Conference on Robot Learning</em>.</p>
-</div> 
-<div id="ref-kumar2020conservative">
-<p><span class="smallcaps">Kumar, A., Zhou, A., Tucker, G., and Levine, S.</span> 2020. Conservative q-learning for offline reinforcement learning. <em>arXiv preprint arXiv:2006.04779</em>.</p>
-</div>
-<div id="ref-lagoudakis2003least">
-  <p><span class="smallcaps">Lagoudakis, M. G, Parr, R.</span> 2003. Least-squares policy iteration. <em>JMLR</em>.</p>
-</div>
-<div id="ref-lange2012batch">
-<p><span class="smallcaps">Lange, S., Gabel, T., and Riedmiller, M.</span> 2012. Batch reinforcement learning. <em>Reinforcement learning</em>.</p>
-</div>
-<div id="ref-langford_talk">
-<p><span class="smallcaps">Langford, J.</span> 2019. A real-world reinforcement learning revolution..</p>
-</div>
-<div id="ref-laroche2019safe">
-<p><span class="smallcaps">Laroche, R., Trichelair, P., and Des Combes, R.T.</span> 2019. Safe policy improvement with baseline bootstrapping. <em>International conference on machine learning</em>, 3652–3661.</p>
-</div>
-<div id="ref-levine2020offline">
-<p><span class="smallcaps">Levine, S., Kumar, A., Tucker, G., and Fu, J.</span> 2020. Offline reinforcement learning: Tutorial, review, and perspectives on open problems. <em>arXiv preprint arXiv:2005.01643</em>.</p>
-</div>
-<div id="ref-liu2019understanding">
-<p><span class="smallcaps">Liu, Y., Bacon, P.-L., and Brunskill, E.</span> 2019a. Understanding the curse of horizon in off-policy evaluation via conditional importance sampling. <em>arXiv preprint arXiv:1910.06508</em>.</p>
-</div>
-<div id="ref-liu2019off">
-<p><span class="smallcaps">Liu, Y., Swaminathan, A., Agarwal, A., and Brunskill, E.</span> 2019b. Off-policy policy gradient with state distribution correction. <em>arXiv preprint arXiv:1904.08473</em>.</p>
-</div>
-<div id="ref-matsushima2020deployment">
-<p><span class="smallcaps">Matsushima, T., Furuta, H., Matsuo, Y., Nachum, O., and Gu, S.</span> 2020. Deployment-efficient reinforcement learning via model-based offline optimization. <em>arXiv preprint arXiv:2006.03647</em>.</p>
-</div>
-<div id="ref-nachum2019dualdice">
-<p><span class="smallcaps">Nachum, O., Chow, Y., Dai, B., and Li, L.</span> 2019a. Dualdice: Behavior-agnostic estimation of discounted stationary distribution corrections. <em>Advances in neural information processing systems</em>, 2318–2328.</p>
-</div>
-<div id="ref-nachum2019algaedice">
-<p><span class="smallcaps">Nachum, O., Dai, B., Kostrikov, I., Chow, Y., Li, L., and Schuurmans, D.</span> 2019b. AlgaeDICE: Policy gradient from arbitrary experience. <em>arXiv preprint arXiv:1912.02074</em>.</p>
-</div>
-<div id="ref-nair2020accelerating">
-<p><span class="smallcaps">Nair, A., Dalal, M., Gupta, A., and Levine, S.</span> 2020. Accelerating online reinforcement learning with offline datasets. <em>arXiv preprint arXiv:2006.09359</em>.</p>
-</div>
-<div id="ref-namkoong2020off">
-<p><span class="smallcaps">Namkoong, H., Keramati, R., Yadlowsky, S., and Brunskill, E.</span> 2020. Off-policy policy evaluation for sequential decisions under unobserved confounding. <em>arXiv preprint arXiv:2003.05623</em>.</p>
-</div>
-<div id="ref-peng2019advantage">
-<p><span class="smallcaps">Peng, X.B., Kumar, A., Zhang, G., and Levine, S.</span> 2019. Advantage-weighted regression: Simple and scalable off-policy reinforcement learning. <em>arXiv preprint arXiv:1910.00177</em>.</p>
-</div>
-<div id="ref-peshkin2002learning">
-<p><span class="smallcaps">Peshkin, L., Shelton, C. R.</span> 2002. Learning from scarce experience. <em>arXiv preprint cs/0204043.</em>.</p>
-</div>
-<div id="ref-prasad2020defining">
-<p><span class="smallcaps">Prasad, N., Engelhardt, B., and Doshi-Velez, F.</span> 2020. Defining admissible rewards for high-confidence policy evaluation in batch reinforcement learning. <em>Proceedings of the acm conference on health, inference, and learning</em>, 1–9.</p>
-</div>
-<div id="ref-precup2000eligibility">
-<p><span class="smallcaps">Precup, D.</span> 2000. Eligibility traces for off-policy policy evaluation. <em>Computer Science Department Faculty Publication Series</em>, 80.</p>
-</div>
-<div id="ref-precup2001off">
-<p><span class="smallcaps">Precup, D., Sutton, R.S., and Dasgupta, S.</span> 2001. Off-policy temporal-difference learning with function approximation. <em>ICML</em>, 417–424.</p>
-</div>
-<div id="ref-shortreed2011informing">
-<p><span class="smallcaps">Shortreed, S.M., Laber, E., Lizotte, D.J., Stroup, T.S., Pineau, J., and Murphy, S.A.</span> 2011. Informing sequential clinical decision-making through reinforcement learning: An empirical study. <em>Machine learning</em>.</p>
-</div>
-<div id="ref-siegel2020keep">
-<p><span class="smallcaps">Siegel, N., Springenberg, J.T., Berkenkamp, F., et al.</span> 2020. Keep doing what worked: Behavior modelling priors for offline reinforcement learning. <em>ICLR</em>.</p>
-</div>
-<div id="ref-Sohn2020BRPOBR">
-<p><span class="smallcaps">Sohn, S., Chow, Y., Ooi, J., et al.</span> 2020. BRPO: Batch residual policy optimization. <em>arXiv:2002.05522</em>.</p>
-</div>
-<div id="ref-sussexstitched">
-<p><span class="smallcaps">Sussex, S., Gottesman, O., Liu, Y., Murphy, S., Brunskill, E., and Doshi-Velez, F.</span> Stitched trajectories for off-policy learning..</p>
-</div>
-<div id="ref-sutton2009fastgtd">
-<p><span class="smallcaps">Sutton, R.S., Maei, H.R., Precup, D., et al.</span> 2009. Fast gradient-descent methods for temporal-difference learning with linear function approximation. <em>Proceedings of the 26th annual international conference on machine learning</em>, 993–1000.</p>
-</div>
-<div id="ref-sutton1991dyna">
-<p><span class="smallcaps">Sutton, R.S.</span> 1991. Dyna, an integrated architecture for learning, planning, and reacting. <em>ACM Sigart Bulletin,</em>, 160-163.</p>
-</div>
-<div id="ref-thomas2015high">
-<p><span class="smallcaps">Thomas, P. S., Theocharous, G., Ghavamzadeh, M. </span> 2015. High-confidence off-policy evaluation. <em>AAAI</em>.</p>
-</div>
-<div id="ref-wang2018">
-  <p><span class="smallcaps"> Wang Q, Xiong J, Han L, Liu H, Zhang T. </span> 2018. Exponentially weighted imitation learning for batched historical data. <em> NeurIPS</em>.</p>
-</div>
-<div id="ref-wang2020critic">
-<p><span class="smallcaps">Wang, Z., Novikov, A., Żołna, K., et al.</span> 2020. Critic Regularized Regression. <em>arXiv e-prints</em>, arXiv:2006.15134.</p>
-</div>
-<div id="ref-wu2019behavior">
-<p><span class="smallcaps">Wu, Y., Tucker, G., and Nachum, O.</span> 2019. Behavior regularized offline reinforcement learning. <em>arXiv preprint arXiv:1911.11361</em>.</p>
-</div>
-<div id="ref-Xie2020QAS">
-<p><span class="smallcaps">Xie, T. and Jiang, N.</span> 2020. Q* approximation schemes for batch reinforcement learning: A theoretical comparison. <em>ArXiv</em> <em>abs/2003.03924</em>.</p>
-</div>
-<div id="ref-yu2020mopo">
-<p><span class="smallcaps">Yu, T., Thomas, G., Yu, L., et al.</span> 2020. MOPO: Model-based offline policy optimization. <em>arXiv preprint arXiv:2005.13239</em>.</p>
-</div>
+  
+  <p>
+  <div data-csl-entry-id="abachi2020policy" class="row">Abachi, R., Ghavamzadeh, M., &#38; Farahmand, A. (2020). Policy-aware model learning for policy gradient methods. <i>ArXiv Preprint ArXiv:2003.00030</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="amos2018differentiable" class="row">Amos, B., Rodriguez, I. D. J., Sacks, J., Boots, B., &#38; Kolter, J. Z. (2018). Differentiable mpc for end-to-end planning and control. <i>ArXiv Preprint ArXiv:1810.13400</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="ayoub2020model" class="row">Ayoub, A., Jia, Z., Szepesvari, C., Wang, M., &#38; Yang, L. (2020). Model-based reinforcement learning with value-targeted regression. <i>International Conference on Machine Learning</i>, 463–474.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="balduzzi2015compatible" class="row">Balduzzi, D., &#38; Ghifary, M. (2015). Compatible value gradients for reinforcement learning of continuous deep policies. <i>ArXiv Preprint ArXiv:1509.03005</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="donti2017" class="row">Donti, P., Amos, B., &#38; Kolter, J. Z. (2017). Task-based End-to-end Model Learning in Stochastic Optimization. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, &#38; R. Garnett (Eds.), <i>Advances in Neural Information Processing Systems</i> (Vol. 30).</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="d2020learn" class="row">D’Oro, P., &#38; Jaskowski, W. (2020). How to Learn a Useful Critic? Model-based Action-Gradient-Estimator Policy Optimization. <i>Advances in Neural Information Processing Systems 33</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="d2020gradient" class="row">D’Oro, P., Metelli, A. M., Tirinzoni, A., Papini, M., &#38; Restelli, M. (2020). Gradient-aware model-based policy search. <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, <i>34</i>(4), 3801–3808.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="East20" class="row">East, S., Gallieri, M., Masci, J., Koutnı́k, J., &#38; Cannon, M. (2020). Infinite-Horizon Differentiable Model Predictive Control. <i>8th International Conference on Learning Representations, ICLR 2020</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="farahmand2018iterative" class="row">Farahmand, A. (2018). Iterative Value-Aware Model Learning. <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, 9072–9083.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="farahmand2017value" class="row">Farahmand, A., Barreto, A. M. S., &#38; Nikovski, D. N. (2017). Value-Aware Loss Function for Model-based Reinforcement Learning. <i>Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 1486–1494.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="Farquhar18" class="row">Farquhar, G., Rocktäschel, T., Igl, M., &#38; Whiteson, S. (2018). TreeQN and ATreeC: Differentiable Tree-Structured Models for Deep Reinforcement Learning. <i>6th International Conference on Learning Representations, ICLR 2018</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="grimm2020value" class="row">Grimm, C., Barreto, A. M. S., Singh, S., &#38; Silver, D. (2020). The Value Equivalence Principle for Model-Based Reinforcement Learning. <i>Advances in Neural Information Processing Systems (NeurIPS)</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="kirsch2019improving" class="row">Kirsch, L., van Steenkiste, S., &#38; Schmidhuber, J. (2019). Improving generalization in meta reinforcement learning using learned objectives. <i>ArXiv Preprint ArXiv:1910.04098</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="lambert2020objective" class="row">Lambert, N., Amos, B., Yadan, O., &#38; Calandra, R. (2020). Objective Mismatch in Model-based Reinforcement Learning. <i>ArXiv Preprint ArXiv:2002.04523</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="mnih2015human" class="row">Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., &#38; others. (2015). Human-level control through deep reinforcement learning. <i>Nature</i>, <i>518</i>(7540), 529–533.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="nair2020goal" class="row">Nair, S., Savarese, S., &#38; Finn, C. (2020). Goal-aware prediction: Learning to model what matters. <i>International Conference on Machine Learning</i>, 7207–7219.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="nikishin2021control" class="row">Nikishin, E., Abachi, R., Agarwal, R., &#38; Bacon, P.-L. (2021). Control-Oriented Model-Based Reinforcement Learning with Implicit Differentiation. <i>ArXiv Preprint ArXiv:2106.03273</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="oh2020discovering" class="row">Oh, J., Hessel, M., Czarnecki, W. M., Xu, Z., van Hasselt, H., Singh, S., &#38; Silver, D. (2020). Discovering reinforcement learning algorithms. <i>ArXiv Preprint ArXiv:2007.08794</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="oh2017value" class="row">Oh, J., Singh, S., &#38; Lee, H. (2017). Value prediction network. <i>Advances in Neural Information Processing Systems</i>, <i>30</i>.</div>
+  </p>  
+  <p>
+  <div data-csl-entry-id="rajeswaran2020game" class="row">Rajeswaran, A., Mordatch, I., &#38; Kumar, V. (2020). A game theoretic framework for model based reinforcement learning. <i>International Conference on Machine Learning</i>, 7953–7963.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="schrittwieser2020mastering" class="row">Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K., Sifre, L., Schmitt, S., Guez, A., Lockhart, E., Hassabis, D., Graepel, T., &#38; others. (2020). Mastering atari, go, chess and shogi by planning with a learned model. <i>Nature</i>, <i>588</i>(7839), 604–609.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="silver2017predictron" class="row">Silver, D., Hasselt, H., Hessel, M., Schaul, T., Guez, A., Harley, T., Dulac-Arnold, G., Reichert, D., Rabinowitz, N., Barreto, A., &#38; others. (2017). The predictron: End-to-end learning and planning. <i>International Conference on Machine Learning</i>, 3191–3199.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="silver2021reward" class="row">Silver, D., Singh, S., Precup, D., &#38; Sutton, R. S. (2021). Reward is enough. <i>Artificial Intelligence</i>, <i>299</i>, 103535.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="tamar2016value" class="row">Tamar, A., Wu, Y., Thomas, G., Levine, S., &#38; Abbeel, P. (2016). Value iteration networks. <i>Advances in Neural Information Processing Systems</i>, <i>29</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="voelcker2021value" class="row">Voelcker, C. A., Liao, V., Garg, A., &#38; Farahmand, A. (2021). Value Gradient weighted Model-Based Reinforcement Learning. <i>International Conference on Learning Representations</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="xu2018algorithmic" class="row">Xu, H., Li, Y., Tian, Y., Darrell, T., &#38; Ma, T. (2018). Algorithmic framework for model-based reinforcement learning with theoretical guarantees. <i>ArXiv Preprint ArXiv:1807.03858</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="xu2020meta" class="row">Xu, Z., van Hasselt, H., Hessel, M., Oh, J., Singh, S., &#38; Silver, D. (2020). Meta-gradient reinforcement learning with an objective discovered online. <i>ArXiv Preprint ArXiv:2007.08433</i>.</div>
+  </p>
+  <p>
+  <div data-csl-entry-id="xu2018meta" class="row">Xu, Z., van Hasselt, H., &#38; Silver, D. (2018). Meta-gradient reinforcement learning. <i>ArXiv Preprint ArXiv:1805.09801</i>.</div>
+  </p>
 </div>
