@@ -7,22 +7,59 @@ layout: default
     <figcaption style='text-align: center'><small>Source: <a href="https://ai.googleblog.com/2020/04/an-optimistic-perspective-on-offline.html">Google AI Blog </a></small></figcaption>
 </figure> -->
 
+
+
+
 <div class="row">
 
 <!-- <p style="color:red;"> The website for <b>2<sup>nd</sup></b> offline RL workshop at NeurIPS 2021 can be found at <a href=https://offline-rl-neurips.github.io/2021> offline-rl-neurips.github.io/2021</a>.<p> -->
 
 <h3>Summary</h3>
-<div class="break"></div>
 
-<p>This workshop is about decision awareness in RL, which we refer to as the knowledge that each of the components of an RL system should be explicitly trained to help the agent take the optimal action. A classical example of decision awareness is the recognition that a world model does not have to focus on accurately predicting all the granular variations in all parts of the environment but rather focus on elements that are important for decision making. Our goal is to give an outlet for a discussion about decision-aware RL algorithms, implications and real-world applications of these techniques, as well as in widening the understanding of the conceptual and practical limitations of existing approaches.</p>
-<p>The submission deadline is May 27, 2022, Anywhere on Earth.</p>
 
-<hr>
+<p>This workshop is about decision awareness in RL, which we refer to as the knowledge that each of the components of an RL system should be explicitly trained to help the agent take the optimal action. Classical examples of decision awareness include:</p> 
+<ul> 
+<li>Learning aspects of the dynamics that are important for decision making and not modelling irrelevant parts of the world</li> 
+<li>Training a critic to directly aid policy optimization instead of focusing on return prediction only</li>
+<li>Addressing the sequence of learning problems faced by an agent in its entirety instead of treating them in isolation</li>
+<li>Meta-learning the algorithmic components that optimize the learning progress itself</li>
+</ul>
 
-<p>A reinforcement learning (RL) agent typically contains several modules such as a policy, a value function, or a model of the environment's dynamics. Conventionally, each of these modules is trained to perform well with respect to a criterion that does not explicitly consider its role, in interaction with other modules, in the eventual decision making of the agent. For instance, a model in a model-based RL agent is trained to be an accurate predictor of the environment dynamics; but accurate predictions may not be feasible or even necessary, for instance, when dealing with the irrelevant details of an image in a visual-based environment. Trying to learn an accurate model of the dynamics requires a much larger number of samples and higher-capacity function approximators compared to a <span><em>decision-aware</em></span> model that only focuses on modelling the relevant aspects of the environment. Decision awareness refers to the principle that each module should be trained to <span><em>explicitly</em></span> consider how its interaction with other modules leads to improving the agent’s long-term performance.</p>
-<p>Decision awareness goes beyond model learning. In actor-critic algorithms, a critic is trained to predict the expected return while later used to aid policy optimization. Is the accuracy on return prediction a sensible goal for critic learning? Or can we train a critic that considers its interaction with the policy and directly maximizes the resulting performance? More generally, what is the best way to learn each components of an RL agent, considering their mutual interactions and the eventual goal of maximizing rewards? Through this workshop, we seek answers to this question.</p>
-    <p>For a list of representative papers, please visit the <a href="resources.html"> resources page</a>.</p>
+<p>For a list of representative papers, please visit the <a href="resources.html">resources page</a>.</p>
+
 </div>
+
+<div class="row">
+<h3>Important Dates</h3>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <td>Submission site opens</td>
+      <td>May 1, 2022</td>
+    </tr>
+    <tr>
+      <td>Submission deadline</td>
+      <td>May 27, 2022 AoE</td>
+    </tr>
+    <tr>
+      <td>Decisions announced</td>
+      <td>June 13, 2022</td>
+    </tr>
+    <tr>
+      <td>Camera-ready and video submission due</td>
+      <td>July 1, 2022 AoE</td>
+    </tr>
+    <tr>
+      <td>Day of workshop</td>
+      <td>July 22 or 23 (to be confirmed), 2022</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<!-- <p>A reinforcement learning (RL) agent typically contains several modules such as a policy, a value function, or a model of the environment's dynamics. Conventionally, each of these modules is trained to perform well with respect to a criterion that does not explicitly consider its role, in interaction with other modules, in the eventual decision making of the agent. For instance, a model in a model-based RL agent is trained to be an accurate predictor of the environment dynamics; but accurate predictions may not be feasible or even necessary, for instance, when dealing with the irrelevant details of an image in a visual-based environment. Trying to learn an accurate model of the dynamics requires a much larger number of samples and higher-capacity function approximators compared to a <span><em>decision-aware</em></span> model that only focuses on modelling the relevant aspects of the environment. Decision awareness refers to the principle that each module should be trained to <span><em>explicitly</em></span> consider how its interaction with other modules leads to improving the agent’s long-term performance.</p> -->
+<!-- <p>Decision awareness goes beyond model learning. In actor-critic algorithms, a critic is trained to predict the expected return while later used to aid policy optimization. Is the accuracy on return prediction a sensible goal for critic learning? Or can we train a critic that considers its interaction with the policy and directly maximizes the resulting performance? More generally, what is the best way to learn each components of an RL agent, considering their mutual interactions and the eventual goal of maximizing rewards? Through this workshop, we seek answers to this question.</p> -->
 
 <!-- <div id="PC" class="row">
 <h3>Program Committee</h3>
@@ -81,7 +118,7 @@ layout: default
 </div> -->
 
 <div id="organizers" class="row">
-<h2 style="float:left;">Organizers</h2>
+<h3 style="float:left;">Organizers</h3>
 <div class="break"></div>
 <div style="text-align: left;">
 {%- for person in site.data.organizers -%}
